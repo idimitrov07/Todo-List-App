@@ -1,14 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @todo_list.title %>
-</p>
+<table class= "pure-table pure-table-bordered">
+<tr>
+  <td><strong>Title:</strong>
+  <%= @todo_list.title %></td>
+<tr>
 
-<p>
-  <strong>Description:</strong>
-  <%= @todo_list.description %>
-</p>
-
+<tr>
+  <td><strong>Description:</strong>
+  <%= @todo_list.description %></td>
+</tr>
+</table>
+<div class="links">
 <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
 <%= link_to 'Back', todo_lists_path %>
+</div>

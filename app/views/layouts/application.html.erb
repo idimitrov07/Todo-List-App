@@ -3,18 +3,28 @@
 <head>
   <title>Odot</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-	<% flash.each do |type, message| %>
-		<div class="alert flash <%= type %>">
-			<%= message %>
+	<div class="container">
+		<div class="pure-menu pure-menu-open pure-menu-horizontal nav">
+			<ul>
+				<li><h1><%= link_to "Odot", root_path %></h1></li>
+				<li><%= link_to "Todo Lists", todo_lists_path %></li>
+			</ul>
 		</div>
-	<% end %>
 
-<%= yield %>
+		<% flash.each do |type, message| %>
+			<div class="alert flash <%= type %>">
+				<%= message %>
+			</div>
+		<% end %>
+
+		<%= yield %>
+	</div>
 
 </body>
 </html>

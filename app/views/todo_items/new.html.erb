@@ -1,4 +1,4 @@
 <h2><%= @todo_list.title %> - New Todo List Item</h2>
-<%= form_for [@todo_list, @todo_item] do |form| %>
+<%= form_for([@todo_list, @todo_item], html: { class: "pure-form"} ) do |form| %>
   <%= render partial: form %>
 <% end %>

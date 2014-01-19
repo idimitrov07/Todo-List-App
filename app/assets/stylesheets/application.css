@@ -20,3 +20,24 @@ div.alert {
 div.flash.success { border: 2px solid green; color: green; }
 div.flash.error { border: 2px solid red; color: red; }
 div.flash.notice{ border: 2px solid blue; color: blue; }
+
+.container {
+	margin: 20px 20%;
+	font-size: 1.7em;
+}
+.container .todo_items {
+	font-size: 0.9em;
+}
+
+.nav {
+	margin-bottom: 70px;
+}
+
+.main-button {
+	margin-top: 30px;
+}
+
+.links {
+	float: right;
+}
+
