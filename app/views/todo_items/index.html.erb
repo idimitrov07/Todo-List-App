@@ -4,6 +4,11 @@
 	<% @todo_list.todo_items.each do |todo_item| %>
 		 <li id="<%= dom_id(todo_item) %>">
 			<%= todo_item.content %>
+			<% if todo_item.completed? %>
+				<span class="completed-at">Completed <%= time_ago_in_words(todo_item.completed_at) %> ago</span>
+			<% else %>
+				<%= link_to "v", complete_todo_list_todo_item_path(todo_item), method: :patch, class: "pure-button", title: "mark completed" %>
+			<% end %>
 			<span class="links">
 			<%= link_to "Edit", edit_todo_list_todo_item_path(todo_item) %>
 			<%= link_to "Delete", todo_list_todo_item_path(todo_item), method: :delete, data: 
