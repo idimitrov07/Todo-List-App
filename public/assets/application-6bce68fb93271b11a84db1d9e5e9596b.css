@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+div.alert {
+	border: 2px solid #aaa;
+	padding: 10px;
+}
+
+div.flash.success { border: 2px solid green; color: green; }
+div.flash.error { border: 2px solid red; color: red; }
+div.flash.notice{ border: 2px solid blue; color: blue; }
+
+.container {
+	margin: 20px 20%;
+	font-size: 1.5em;
+}
+.container .todo_items {
+	font-size: 0.9em;
+}
+
+ #new-item {
+	font-size: 1.5em;
+}
+
+.nav {
+	margin-bottom: 70px;
+}
+
+.main-button {
+	margin-top: 30px;
+}
+
+.links {
+	float: right;
+}
+
+.field label {
+	padding-bottom: 5px;
+	color: gray;
+}
+
+.completed-at {
+	font-size: 12px;
+	color: lightgray;
+}
+
+table {
+	width: 100%;
+}
+
+
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000; }
+  a:visited {
+    color: #666; }
+  a:hover {
+    color: #fff;
+    background-color: #000; }
+
+div.field, div.actions {
+  margin-bottom: 10px; }
+
+#notice {
+  color: green; }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; }
+  #error_explanation ul li {
+    font-size: 12px;
+    list-style: square; }
