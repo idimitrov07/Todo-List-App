@@ -12,6 +12,10 @@
  *= require_tree .
  */
 
+a {
+  text-decoration: none;
+}
+
 div.alert {
 	border: 2px solid #aaa;
 	padding: 10px;
@@ -56,8 +60,6 @@ div.flash.notice{ border: 2px solid blue; color: blue; }
 }
 
 table {
+  margin: 0 auto;
 	width: 100%;
 }
-
-
-
